@@ -3,5 +3,8 @@
 		"apiKeys": [
 			"key1"
 		]
+	},
+	"la1": {
+		"apiKey": ""
 	}
 }

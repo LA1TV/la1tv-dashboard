@@ -61,15 +61,21 @@ GEM
       addressable (~> 2.3)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mime-types (2.99)
     multi_json (1.11.2)
     multipart-post (2.0.0)
     naught (1.1.0)
+    netrc (0.11.0)
     puma (2.16.0)
     rack (1.5.5)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     retriable (2.1.0)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
@@ -118,7 +124,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.2)
     uptimerobot (0.1.6)
       faraday (>= 0.8)
       faraday_middleware
@@ -132,6 +138,7 @@ DEPENDENCIES
   google-api-client (~> 0.7.1)
   json
   puma
+  rest-client
   twitter (>= 5.9.0)
   uptimerobot
 
