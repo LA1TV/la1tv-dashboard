@@ -1,2 +1,1 @@
-cd dashboard
-bundle && puma config.ru
+cd dashboard && bundle && puma config.ru

@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'dashing'
-
 gem 'google-api-client', '~> 0.7.1'
-
+gem 'json'
+gem 'uptimerobot'
 gem 'puma'
 
 ## Remove this if you don't need a twitter widget.
