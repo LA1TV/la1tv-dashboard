@@ -14,8 +14,15 @@ SCHEDULER.every '45s', :first_in => 0 do |job|
   mediaItems = JSON.parse(response.body)['data']['mediaItems']
 
   streams += mediaItems.map { |mediaItem| 
+    processingMsg = mediaItem['vod']['processing']['message']
+    percentage = mediaItem['vod']['processing']['percentage']
+    if !percentage.nil?
+      processingMsg << " (#{percentage}%)"
+    end
+
     { 
-      label: mediaItem['name']
+      label: mediaItem['name'],
+      value: processingMsg
     }
   }
   send_event('la1_processing', { items: streams } )
